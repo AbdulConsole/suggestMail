@@ -4,5 +4,5 @@ Suggest email address for any given username.
 
 ## Installation
 
-go mod init github.com/abdulconsole/suggestMail
+go install -v github.com/abdulconsole/nuclei@latest
 
