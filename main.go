@@ -4,13 +4,14 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter username: ")
 	username, _ := reader.ReadString('\n')
-	username = username[:len(username)-1]  // Trim the newline character
+	username = strings.TrimSpace(username) // Trim the newline character
 
 	suggestions := suggestEmails(username)
 
